@@ -8,7 +8,6 @@ function toTitleCase(input) {
     return input.toLowerCase().
         replace(/(?:^|\s)\w/g, function (match) {
         return match.toUpperCase();
-        
     });
 }
 console.log(`TitleCase: ${toTitleCase(personName)}`);

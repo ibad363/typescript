@@ -10,8 +10,29 @@
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 
-let DreamPlaces : string[] = ['Makkah', 'Madina','Najaf','Karbala', 'Baghdad','Lahore','Ajmer','Bareilly']; //Store the locations in a array
-console.log(DreamPlaces) // Print array in its original order.
+let dreamPlaces : string[] = ['Makkah', 'Madina','Najaf','Karbala', 'Baghdad','Lahore','Ajmer','Bareilly']; //Store the locations in a array
+console.log(`Original Array: ${dreamPlaces}`); // Print array in its original order.
 
+let sortedDreamPlaces :string[] = [...dreamPlaces]; // copy original for sorting alphabetically 
+sortedDreamPlaces.sort();
+console.log(`Alphabetically sorted Copy Array: ${sortedDreamPlaces}`); // Print array in alphabetical order.
 
+console.log(`Original Array (Again): ${dreamPlaces}`); // Print array in its original order.
 
+let reverseSortedDreamPlaces : string[] = [...sortedDreamPlaces]
+reverseSortedDreamPlaces.reverse();
+console.log(`Reverse Alphabetically sorted Array: ${reverseSortedDreamPlaces}`); // Print array in reverse alphabetical order.
+
+console.log(`Original Array (Again): ${dreamPlaces}`); // Print array in its original order.
+
+dreamPlaces.reverse()
+console.log(`Reverse Original List: ${dreamPlaces}`); // Print original array in reverse order.
+
+dreamPlaces.reverse()
+console.log(`Back to Original Array: ${dreamPlaces}`); // another reverse order for coming back to original array.
+
+dreamPlaces.sort();
+console.log(`Alphabetically sorted Original List: ${dreamPlaces}`); // Print original array in alphabetically sorted order.
+
+dreamPlaces.sort().reverse();
+console.log(`Reverse Alphabetically sorted Original List: ${dreamPlaces}`); // Print original array in Reverse alphabetically sorted order.

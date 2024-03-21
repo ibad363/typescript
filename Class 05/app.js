@@ -1,0 +1,16 @@
+//class 5 about comparison Operators, logical operators & if else statements
+//comparison operators
+var num1 = 5;
+var num2 = 2;
+// let answer = num1 == num2 //false
+// let answer = num1 != num2 //true
+// let answer = num1 > num2 //true
+// let answer = num1 < num2 // false
+// console.log(answer);
+//logical operators
+var a = 5;
+var b = 2;
+// let logicalAnd = (a > 0) && (b > 0); // true
+// let logicalOr = (a < 0) || (b > 0); // true
+var logicalNot = !(a > 0); // false
+console.log(logicalNot);

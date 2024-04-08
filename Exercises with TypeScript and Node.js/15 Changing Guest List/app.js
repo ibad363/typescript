@@ -11,7 +11,7 @@ for (let i = 0; i < guest.length; i++) {
 }
 let absentGuest = 'Ibad';
 let newGuest = 'Ashar';
-guest[0] = newGuest;
+guest[guest.indexOf(absentGuest)] = newGuest;
 console.log(`Mr ${absentGuest} is Not Coming to the Dinner\n`);
 //2nd Invitation
 for (let i = 0; i < guest.length; i++) {

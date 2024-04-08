@@ -1,4 +1,4 @@
-//class 4 about some Operators
+//class 4 about some arithmetic Operators
 
 let a: number = 5;
 let b: number = 2;

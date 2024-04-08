@@ -3,8 +3,8 @@
 let personName : string = 'john dOe';
 
 console.log(`Orignial Name: ${personName}`)
-console.log(`UpperCase: ${personName.toUpperCase()}`)
 
+console.log(`UpperCase: ${personName.toUpperCase()}`)
 console.log(`LowerCase: ${personName.toLowerCase()}`)
 
 function toTitleCase(input : string): string {

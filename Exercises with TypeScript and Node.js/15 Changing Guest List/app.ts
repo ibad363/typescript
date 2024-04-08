@@ -13,7 +13,7 @@ for(let i =0; i<guest.length;i++){
 
 let absentGuest :string = 'Ibad';
 let newGuest : string = 'Ashar';
-guest[0] = newGuest;
+guest[guest.indexOf(absentGuest)] = newGuest
 
 console.log(`Mr ${absentGuest} is Not Coming to the Dinner\n`)
 

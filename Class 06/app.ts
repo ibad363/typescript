@@ -1,17 +1,3 @@
-<<<<<<< Updated upstream
-// class 06 about if else statements
-
-//else if statements
-
-let weather = "cloudy"
-
-if (weather === "raining"){
-    console.log("wear a raincoat");    
-}else if (weather === "cloudy"){
-    console.log("wear a light jacket");    
-}else{
-    console.log("wear sunglasses");
-=======
 //in class 06, revision of if else statement & else if new topic only
 
 //if else statement
@@ -42,5 +28,4 @@ if (percentage >=80 && percentage <=100){
     console.log("Invalid Percentage");
 }else {
     console.log("Fail");
->>>>>>> Stashed changes
 }

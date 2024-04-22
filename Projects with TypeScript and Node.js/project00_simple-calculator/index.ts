@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
@@ -7,11 +8,11 @@ const answer = await inquirer.prompt([
 ])
 
 if (answer.operation === "Addition") {
-    console.log("Your Answer is Here: " + (answer.firstNumber + answer.secondNumber));
+    console.log("Your Answer is: " + (answer.firstNumber + answer.secondNumber));
 } else if (answer.operation === "Subtraction") {
-    console.log(`Your Answer is Here: ${answer.firstNumber - answer.secondNumber}`);
+    console.log(`Your Answer is: ${answer.firstNumber - answer.secondNumber}`);
 } else if (answer.operation === "Multiplication") {
-    console.log(`Your Answer is Here: ${answer.firstNumber * answer.secondNumber}`);
+    console.log(`Your Answer is: ${answer.firstNumber * answer.secondNumber}`);
 } else if (answer.operation === "Division") {
-    console.log(`Your Answer is Here: ${answer.firstNumber / answer.secondNumber}`);
+    console.log(`Your Answer is: ${answer.firstNumber / answer.secondNumber}`);
 } else (`Select Valid Operation`)

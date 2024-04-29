@@ -1,5 +1,5 @@
 {
-  "name": "ibad_simple-calculator",
+  "name": "ibad-simple-calculator",
   "version": "1.0.1",
   "description": "a simple calculator with typescript, node js & inquirer",
   "main": "index.js",

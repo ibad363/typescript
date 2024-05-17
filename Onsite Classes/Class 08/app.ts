@@ -8,3 +8,4 @@ if (password.length >=8){
 }else{
     console.log("Create atleast 8 letter password");
 }
+

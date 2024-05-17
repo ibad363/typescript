@@ -20,8 +20,8 @@ let student= {
     rollno: 21541616,
     Timing: "7 to 10"
 }
-console.log(student);
-console.log(student.name);
+// console.log(student);
+// console.log(student.name);
 
 let student2 = [
     {name : "Ibad",
@@ -34,3 +34,9 @@ let student2 = [
         Timing: "7 to 10"
     }
 ]
+
+// conditional ternary if else (short method)practice
+
+let number = 6
+
+number>5 ? console.log(`The ${number} is greater Than given Number`) : console.log("Not Greater than");

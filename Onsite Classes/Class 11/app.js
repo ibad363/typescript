@@ -13,8 +13,8 @@ var student = {
     rollno: 21541616,
     Timing: "7 to 10"
 };
-console.log(student);
-console.log(student.name);
+// console.log(student);
+// console.log(student.name);
 var student2 = [
     { name: "Ibad",
         rollno: 21541616,
@@ -26,3 +26,6 @@ var student2 = [
         Timing: "7 to 10"
     }
 ];
+// conditional ternary if else (short method)practice
+var number = 6;
+number > 5 ? console.log("The ".concat(number, " is greater Than given Number")) : console.log("Not Greater than");

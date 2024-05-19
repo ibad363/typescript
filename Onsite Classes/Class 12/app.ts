@@ -1,77 +1,111 @@
 // in class 12, type aliases, type union, type literals
 
-// type IrfanFreind = number
-// type IrfanOffice = string
+// type aliases
 
-// let officeNo:IrfanOffice = "Office"
-// let freindNo:IrfanFreind = 162627
+type IrfanFreind = number
+type IrfanOffice = string
 
-// type Human = string
-// type AnimalLetter = number
+let officeNo:IrfanOffice = "Office"
+let freindNo:IrfanFreind = 162627
 
-// const humanName : Human= "Ibad"
-// const animalL : AnimalLetter = 67876
-// //console.log(humanName)
-// //console.log(animalL)
+// console.log(officeNo);
+// console.log(freindNo);
 
-// type Animal = string[]
+type Human = string
+type AnimalLetter = number
 
-// let animals : Animal = ["Lion", "Cheetah" , "Cat" , "anyone"]
+const humanName : Human= "Ibad"
+const animalL : AnimalLetter = 67876
+//console.log(humanName)
+//console.log(animalL)
 
-// //console.log(animals)
+type Animal = string[]
 
-// //type MyArray= (number | string)[]
-// type MyArray= string | number | string[] | number[]
+let animals : Animal = ["Lion", "Cheetah" , "Cat" , "anyone"]
 
-// const kuchBhi : MyArray = ["133","44"]
+//console.log(animals)
+
+
+// type union
+
+//type MyArray= (number | string)[]
+type MyArray= string | number | string[] | number[]
+
+const kuchBhi : MyArray = ["133","44"]
 // console.log(kuchBhi)
 
-// // traffic light
 
-// let trafficLight:"Red"| "Green" | "Yellow";
-// trafficLight= "Red"
-// trafficLight= "Green"
-// trafficLight= "Yellow"
-// // trafficLight = "kuch bhi"
+// type literals
+
+let trafficLight:"Red"| "Green" | "Yellow";
+trafficLight= "Red"
+trafficLight= "Green"
+trafficLight= "Yellow"
+// trafficLight = "kuch bhi"
 // console.log(trafficLight)
 
-// let user : "log in"| "log out";
-// user = "log in"
-// user = "log out"
-// //user = "log hojao"
+let user : "log in"| "log out";
+user = "log in"
+user = "log out"
+//user = "log hojao"
 // console.log(user)
 
 
-// Const car:{
-//     make: string,
-//     Model: number,
-//     Variant : string,
-//     Maxspeed:()=> string
-//     } = {
-//       make: "Toyota",
-//     Model: 2023,
-//     Variant : "1800cc"
-//     MaxSpeed: ()=>{
-//     Return "Max speed is 200"
-//     }
-//     }
-    
-//     Console.log(car.MaxSpeed())
+//object type
 
-//     Const car :{
-//         IsAC: () => boolean
-//        }= {
-//         IsAC: () => true
-//        }
-       
-//        Console.log(car.isAC())
+type CarObject = {
+    make: string,
+    model: number,
+    variant : string,
+    maxSpeed:()=> string
+};
+
+const car: CarObject = {
+    make: "Toyota",
+    model: 2023,
+    variant : "1800cc",
+    maxSpeed: () =>{
+        return "Max speed is 200"
+    }
+}
+
+// console.log(car.maxSpeed());
 
 
-//        type Mycar= {
-//         Make: string,
-//        Model: number,
-//        Variant: string,
-//        Start: ()=> string,
-//        Maxspeed:()=> void,
-//        IsAc: ()=> boolean
-//        }
+
+type MyCar= {
+    make: string,
+    model: number,
+    variant: string,
+    start: ()=> string,
+    maxSpeed:()=> void,
+    isAC: ()=> boolean
+}
+
+
+const car2 : MyCar = {
+    make: "Toyota",
+    model: 2023,
+    variant: "1800cc",
+    start: ()=>{
+        return "Starting speed is 50"
+    },
+    maxSpeed: ()=>{
+        console.log("Max speed is 200");
+    },
+    isAC:()=>true
+}
+
+// console.log(car2.start());
+// car2.maxSpeed();
+// console.log(car2.isAC());
+
+type isAC = {
+    isAC: () => boolean
+}
+
+const acCheck: isAC = {
+    isAC: () => true
+}
+
+console.log(acCheck.isAC())

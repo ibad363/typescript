@@ -1,0 +1,14 @@
+tsc --init
+(tsconfig.json)
+
+npm init -y
+(package.json)
+
+npm i @types/node -D
+(node modules,(install types for nodes))
+
+.gitignore
+(git ignore file)
+
+tsc -w
+(for automatically compilation)

@@ -36,7 +36,37 @@ var car2 = {
     },
     isAC: function () { return true; }
 };
+var myBill = {
+    customerName: "Ibad",
+    products: {
+        productName: "biryani",
+        price: 250,
+        isTasty: function () { return true; }
+    }
+};
 var acCheck = {
     isAC: function () { return true; }
 };
-console.log(acCheck.isAC());
+var car3 = [
+    { name: "Toyota",
+        color: "Black",
+        price: 2500000
+    },
+    { name: "mehran",
+        color: "white",
+        price: 1000000
+    },
+    { name: "civic",
+        color: "white",
+        price: 2500000
+    },
+    { name: "Toyota",
+        color: "Black",
+        price: 2500000
+    }, { name: "Toyota",
+        color: "white",
+        price: 2500000
+    },
+];
+var filterCar = car3.filter(function (cars) { return cars.color > "white"; });
+console.log(filterCar);

@@ -96,6 +96,27 @@ const car2 : MyCar = {
     isAC:()=>true
 }
 
+type Bill = {
+    customerName: string,
+    products :{
+        productName : string,
+        price : number,
+        isTasty : () => boolean
+    }
+}
+
+const myBill: Bill = {
+    customerName : "Ibad",
+    products: {
+        productName: "biryani",
+        price : 250,
+        isTasty: () => true
+    }
+}
+
+// console.log(myBill.products.price);
+
+
 // console.log(car2.start());
 // car2.maxSpeed();
 // console.log(car2.isAC());
@@ -108,4 +129,35 @@ const acCheck: isAC = {
     isAC: () => true
 }
 
-console.log(acCheck.isAC())
+// console.log(acCheck.isAC())
+
+type CarObject2 = {
+    name :String,
+    color: string,
+    price:number
+}
+
+let car3:CarObject2[] = [
+{name: "Toyota",
+        color: "Black",
+        price: 2500000
+    },
+{name: "mehran",
+    color: "white",
+    price: 1000000
+},
+{name: "civic",
+        color: "white",
+        price: 2500000
+    },
+    {name: "Toyota",
+        color: "Black",
+        price: 2500000
+    },{name: "Toyota",
+    color: "white",
+    price: 2500000
+},
+]
+
+let filterCar = car3.filter(cars => cars.color>"white");
+console.log(filterCar);

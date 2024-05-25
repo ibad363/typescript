@@ -60,13 +60,17 @@ var car3 = [
         color: "white",
         price: 2500000
     },
-    { name: "Toyota",
+    { name: "fortuner",
         color: "Black",
         price: 2500000
-    }, { name: "Toyota",
+    }, { name: "revo",
         color: "white",
-        price: 2500000
+        price: 10000000
     },
 ];
-var filterCar = car3.filter(function (cars) { return cars.color > "white"; });
-console.log(filterCar);
+//filter method
+var filterCar = car3.filter(function (cars) { return cars.color === "white"; });
+filterCar = car3.filter(function (car) { return car.price > 1500000; });
+// console.log(filterCar);
+var filterCar2 = car3.filter(function (carcbf) { return carcbf.color == "white"; });
+console.log(filterCar2);

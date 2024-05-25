@@ -150,14 +150,20 @@ let car3:CarObject2[] = [
         color: "white",
         price: 2500000
     },
-    {name: "Toyota",
+    {name: "fortuner",
         color: "Black",
         price: 2500000
-    },{name: "Toyota",
+    },{name: "revo",
     color: "white",
-    price: 2500000
+    price: 10000000
 },
 ]
 
-let filterCar = car3.filter(cars => cars.color>"white");
-console.log(filterCar);
+//filter method
+
+let filterCar = car3.filter(cars => cars.color ==="white");
+filterCar = car3.filter(car => car.price > 1500000)
+// console.log(filterCar);
+
+let filterCar2 = car3.filter(carcbf => carcbf.color == "white")
+console.log(filterCar2);

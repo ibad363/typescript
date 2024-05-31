@@ -64,7 +64,7 @@ let persons = ["babar", "shaheen", "imad", "rizwan"];
 // for (let player of persons){
 //     console.log(player.toUpperCase());
 // }
-// enums
+// ENUM
 var Direction;
 (function (Direction) {
     Direction["North"] = "North";
@@ -84,4 +84,33 @@ var TimeSlot;
     TimeSlot["Night"] = "Night";
 })(TimeSlot || (TimeSlot = {}));
 const compass3 = TimeSlot.Morning;
-console.log(compass3);
+// console.log(compass3);
+var Days;
+(function (Days) {
+    Days[Days["mon"] = 0] = "mon";
+    Days[Days["tues"] = 1] = "tues";
+    Days[Days["wed"] = 2] = "wed";
+})(Days || (Days = {}));
+let today = Days.mon;
+// console.log(today); //output 0 (shows index number starting by 0)
+var Days2;
+(function (Days2) {
+    Days2[Days2["mon"] = 10] = "mon";
+    Days2[Days2["tues"] = 11] = "tues";
+    Days2[Days2["wed"] = 12] = "wed";
+})(Days2 || (Days2 = {}));
+let today2 = Days2.tues;
+// console.log(today2); //output 11 (if monday index is 10, so tuesday index is 11)
+var Days3;
+(function (Days3) {
+    Days3["mon"] = "Monday";
+    Days3["tues"] = "Tuesday";
+    Days3["wed"] = "Wednesday";
+})(Days3 || (Days3 = {}));
+let today3 = Days3.mon;
+; // index starts with 0
+let c = 1 /* Color.Green */;
+;
+; //can also assign values to all
+let colorIndex = 4 /* Color2["Blue"] */;
+// console.log(colorIndex); // output: shows value of blue

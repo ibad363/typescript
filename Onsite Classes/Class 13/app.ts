@@ -100,7 +100,8 @@ let persons : string[]= ["babar","shaheen","imad","rizwan"]
 // }
 
 
-// enums
+// ENUM
+
 enum Direction{
     North = "North",
     South = "South",
@@ -121,4 +122,46 @@ enum TimeSlot{
 }
 
 const compass3: TimeSlot = TimeSlot.Morning
-console.log(compass3);
+// console.log(compass3);
+
+enum Days{
+    mon,
+    tues,
+    wed,
+}
+
+let today :Days = Days.mon
+// console.log(today); //output 0 (shows index number starting by 0)
+
+enum Days2{
+    mon = 10,
+    tues,
+    wed,
+}
+
+let today2 :Days2 = Days2.tues
+// console.log(today2); //output 11 (if monday index is 10, so tuesday index is 11)
+
+enum Days3{
+    mon = "Monday",
+    tues = "Tuesday",
+    wed = "Wednesday",
+}
+
+let today3 :Days3 = Days3.mon
+// console.log(today3); //output Monday
+
+
+//const enum
+
+const enum Color {Red, Green, Blue}; // index starts with 0
+let c: Color = Color.Green;
+// console.log(c); // output 1
+
+const enum Color1 {Red = 1, Green, Blue};
+// let colorName: string = Color[2]; //it is Not allowed with const enums
+// console.log(colorName);
+
+const enum Color2 {Red = 1, Green = 2, Blue = 4}; //can also assign values to all
+let colorIndex = Color2["Blue"];
+// console.log(colorIndex); // output: shows value of blue

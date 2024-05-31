@@ -88,17 +88,37 @@ value = 152; // OK
 
 
 // .length method
-// let persons : string[]= ["babar","shaheen","imad","rizwan"]
+let persons : string[]= ["babar","shaheen","imad","rizwan"]
 // for (let i= 0; i < persons.length;i++){
 //     // console.log(i);// output. 0,1,2,3 (means it shows index)
 //     console.log(persons[i]);
 // }
 
+// for of loop
+// for (let player of persons){
+//     console.log(player.toUpperCase());
+// }
+
+
+// enums
 enum Direction{
     North = "North",
     South = "South",
     East = "East",
-    West = "Wese"
+    West = "West"
 }
 
-const compass: Direction = d
+const compass: Direction = Direction.West
+const compass2: Direction = Direction.North
+// console.log(compass);
+// console.log(compass2)
+
+enum TimeSlot{
+    Morning = "Morning",
+    Afternoon = "Afternoon",
+    Evening = "Evening",
+    Night = "Night"
+}
+
+const compass3: TimeSlot = TimeSlot.Morning
+console.log(compass3);

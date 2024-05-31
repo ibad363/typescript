@@ -1,3 +1,4 @@
+"use strict";
 // in class 13, Type union, Intersection types, for loop, while loop, for of loop, enums
 // Array multiple types
 // Array of Booleans
@@ -11,17 +12,17 @@
 //     ["Ibad4"]
 // ]
 // Another(but organized) Nested Array with Union Types
-var myArray = [
+let myArray = [
     [true, false, true],
     ["ibad", "ibad2", "ibad3"],
 ];
-var personEmployee = {
+const personEmployee = {
     name: "Ibad",
     employeeID: 152
 };
 // console.log(personEmployee);
 // union types ( | )
-var value;
+let value;
 value = "Ibad"; // OK
 // console.log(value); // Output: "Ibad"
 value = 152; // OK
@@ -53,8 +54,34 @@ value = 152; // OK
 //     console.log(a);
 //     a++
 // }
-var persons = ["babar", "shaheen", "imad", "rizwan"];
-for (var i = 0; i < persons.length; i++) {
-    // console.log(i);// output. 0,1,2,3 (means it shows index)
-    console.log(persons[i]);
-}
+// .length method
+let persons = ["babar", "shaheen", "imad", "rizwan"];
+// for (let i= 0; i < persons.length;i++){
+//     // console.log(i);// output. 0,1,2,3 (means it shows index)
+//     console.log(persons[i]);
+// }
+// for of loop
+// for (let player of persons){
+//     console.log(player.toUpperCase());
+// }
+// enums
+var Direction;
+(function (Direction) {
+    Direction["North"] = "North";
+    Direction["South"] = "South";
+    Direction["East"] = "East";
+    Direction["West"] = "West";
+})(Direction || (Direction = {}));
+const compass = Direction.West;
+const compass2 = Direction.North;
+// console.log(compass);
+// console.log(compass2)
+var TimeSlot;
+(function (TimeSlot) {
+    TimeSlot["Morning"] = "Morning";
+    TimeSlot["Afternoon"] = "Afternoon";
+    TimeSlot["Evening"] = "Evening";
+    TimeSlot["Night"] = "Night";
+})(TimeSlot || (TimeSlot = {}));
+const compass3 = TimeSlot.Morning;
+console.log(compass3);

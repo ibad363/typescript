@@ -1,5 +1,7 @@
 "use strict";
 // in class 14 (30/5/24), enum, const enum, tuples , modules
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.sum = void 0;
 //Enum
 var Fuel;
 (function (Fuel) {
@@ -48,3 +50,14 @@ studentInfo = [
     ["Rayyan", 11, true],
     // [12,"Usama",true] // it shows error because in 0 index string is allowed & index 1 number is allowed
 ];
+//modules
+function sum(num1, num2) {
+    return num1 + num2;
+}
+exports.sum = sum;
+//Export keyword export function, type aliases, interface, simple variable
+// Destructure the array
+// let studentInfo2 : [string,number, boolean]
+// studentInfo2 = ["Ibad", 324330, true]
+// let [name, rollNo, onsite] = studentInfo2
+// console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );

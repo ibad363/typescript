@@ -68,6 +68,15 @@ var car3 = [
         price: 10000000
     },
 ];
+var myInfo = {
+    name: "Ibad",
+    age: 20,
+    isMarried: false,
+    isEarning: true,
+};
+// two methods of objects property access
+// console.log(myInfo["name"])
+// console.log(myInfo.name);
 //filter method
 var filterCar = car3.filter(function (cars) { return cars.color === "white"; });
 filterCar = car3.filter(function (car) { return car.price > 1500000; });

@@ -25,7 +25,6 @@ let animals : Animal = ["Lion", "Cheetah" , "Cat" , "anyone"]
 
 //console.log(animals)
 
-
 // type union
 
 //type MyArray= (number | string)[]
@@ -158,6 +157,26 @@ let car3:CarObject2[] = [
     price: 10000000
 },
 ]
+
+type Info = {
+    name : string,
+    age: number,
+    isMarried: boolean,
+    isEarning: boolean,
+}
+
+let myInfo:Info = {
+    name : "Ibad",
+    age: 20,
+    isMarried: false,
+    isEarning: true,
+}
+
+// two methods of objects property access
+
+// console.log(myInfo["name"])
+// console.log(myInfo.name);
+
 
 //filter method
 

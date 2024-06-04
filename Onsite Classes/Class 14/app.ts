@@ -73,3 +73,17 @@ studentInfo= [
     // [12,"Usama",true] // it shows error because in 0 index string is allowed & index 1 number is allowed
 ]
 
+
+//modules
+export function sum (num1: number, num2: number){
+    return num1+num2
+}
+//Export keyword export function, type aliases, interface, simple variable
+
+
+// Destructure the array
+// let studentInfo2 : [string,number, boolean]
+// studentInfo2 = ["Ibad", 324330, true]
+// let [name, rollNo, onsite] = studentInfo2
+// console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );
+

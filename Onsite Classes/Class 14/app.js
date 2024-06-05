@@ -1,5 +1,5 @@
 "use strict";
-// in class 14 (30/5/24), enum, const enum, tuples , modules
+// in class 14 (30/5/24), enum, const enum, tuples , modules, Destructure the array, unkown type, any type, narrowing, error type, rest parameters
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sum = void 0;
 //Enum
@@ -61,3 +61,31 @@ exports.sum = sum;
 // studentInfo2 = ["Ibad", 324330, true]
 // let [name, rollNo, onsite] = studentInfo2
 // console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );
+// unkown type
+let val;
+let val2 = val; //ok (means that type unkwown is compatible with unkwown)
+let val3 = val; // ok (means that type any is compatible with unkwown)
+// let firstName :string = val //error
+// let age :number = val //error
+// any type
+// let firstName : any = "Ali"
+// firstName= 10;
+// firstName = true
+// firstName = [""]
+// firstName = () => true
+// console.log(firstName);
+// narrowing
+// let age :String | number
+// age = "twenty five"
+// age = 25.202646
+// if(typeof age === "number"){
+//     // console.log(Math.round(age));
+//     console.log(age.toFixed(2));
+// }else{
+//     console.log(age.toUpperCase());
+// }
+// if (typeof age === "number"){
+//     console.log("this is a number");
+// }else{
+//     console.log("this is string");
+// }

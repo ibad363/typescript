@@ -15,11 +15,11 @@
 //     ["Ibad4"]
 // ]
 
+
 // Another(but organized) Nested Array with Union Types
 let myArray : (number|string|boolean)[][]= [
     [true,false,true],
     ["ibad","ibad2","ibad3"],
-   
 ]
 
 // console.log(myArray);

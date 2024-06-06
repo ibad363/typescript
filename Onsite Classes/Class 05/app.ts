@@ -11,12 +11,12 @@ let num2 : number = 2
 
 // console.log(answer);
 
-//logical operators
+//logical operators ( && = logical and, || = logical or, ! = logical not)
 
 let a=5
 let b=2
 // let logicalAnd = (a > 0) && (b > 0); // true
 // let logicalOr = (a < 0) || (b > 0); // true
-let logicalNot = !(a > 0); // false
+// let logicalNot = !(a > 0); // false
 
-console.log(logicalNot);
+// console.log(logicalNot);

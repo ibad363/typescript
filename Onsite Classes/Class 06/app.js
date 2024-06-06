@@ -1,16 +1,4 @@
-<<<<<<< Updated upstream
-// class 06 about if else statements
-//else if statements
-var weather = "cloudy";
-if (weather === "raining") {
-    console.log("wear a raincoat");
-}
-else if (weather === "cloudy") {
-    console.log("wear a light jacket");
-}
-else {
-    console.log("wear sunglasses");
-=======
+"use strict";
 //in class 06, revision of if else statement & else if new topic only
 //if else statement
 // let email :string = "ibad@gmail.com"
@@ -21,7 +9,7 @@ else {
 //     console.log("invalid Credentials");
 // }
 //else if statement
-var percentage = 100.5;
+let percentage = 100.5;
 if (percentage >= 80 && percentage <= 100) {
     console.log("A+ Grade");
 }
@@ -42,5 +30,4 @@ else if (percentage > 100) {
 }
 else {
     console.log("Fail");
->>>>>>> Stashed changes
 }

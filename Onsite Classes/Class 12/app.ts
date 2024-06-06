@@ -25,22 +25,24 @@ let animals : Animal = ["Lion", "Cheetah" , "Cat" , "anyone"]
 
 //console.log(animals)
 
-// type union
+// Type union: A union type lets you define a variable or function argument that can hold multiple different data types. It's like saying, "This value can be either this type, or this type, or even this other type."
+// Example: string or number = string | number
+// In this example: string is allowed, number is also allowed, but any other type is not allowed because it is not defined. and in string or number only one is allowed either string or number
 
-//type MyArray= (number | string)[]
+// type MyArray= (number | string)[] // array men string aur number dono asakte hen
 type MyArray= string | number | string[] | number[]
 
 const kuchBhi : MyArray = ["133","44"]
 // console.log(kuchBhi)
 
 
-// type literals
+// Type literals: Jab Hume Pehle Se Value Ka Pata Hota Hai, to hum variable ki type ki jagah par values directly likh dete hain. Ab iske ilawa koi aur value us variable mein nahi a sakti.
 
-let trafficLight:"Red"| "Green" | "Yellow";
-trafficLight= "Red"
-trafficLight= "Green"
-trafficLight= "Yellow"
-// trafficLight = "kuch bhi"
+let trafficLight: "Red"| "Green" | "Yellow";
+trafficLight = "Red"
+trafficLight = "Green"
+trafficLight = "Yellow"
+// trafficLight = "kuch bhi" //error
 // console.log(trafficLight)
 
 let user : "log in"| "log out";
@@ -56,7 +58,7 @@ type CarObject = {
     make: string,
     model: number,
     variant : string,
-    maxSpeed:()=> string
+    maxSpeed: ()=> string
 };
 
 const car: CarObject = {
@@ -70,15 +72,14 @@ const car: CarObject = {
 
 // console.log(car.maxSpeed());
 
-
-
 type MyCar= {
     make: string,
     model: number,
     variant: string,
     start: ()=> string,
     maxSpeed:()=> void,
-    isAC: ()=> boolean
+    // isAC: ()=> boolean
+    isAC: boolean
 }
 
 
@@ -92,8 +93,14 @@ const car2 : MyCar = {
     maxSpeed: ()=>{
         console.log("Max speed is 200");
     },
-    isAC:()=>true
+    // isAC:()=>true
+    isAC: true
 }
+
+// console.log(car2);
+// console.log(car2.start());
+// car2.maxSpeed();
+// console.log(car2.isAC());
 
 type Bill = {
     customerName: string,
@@ -116,10 +123,6 @@ const myBill: Bill = {
 // console.log(myBill.products.price);
 
 
-// console.log(car2.start());
-// car2.maxSpeed();
-// console.log(car2.isAC());
-
 type isAC = {
     isAC: () => boolean
 }
@@ -137,26 +140,37 @@ type CarObject2 = {
 }
 
 let car3:CarObject2[] = [
-{name: "Toyota",
+    {name: "Toyota",
         color: "Black",
-        price: 2500000
-    },
-{name: "mehran",
+        price: 2500000},
+
+    {name: "mehran",
     color: "white",
-    price: 1000000
-},
-{name: "civic",
+    price: 1000000},
+
+    {name: "civic",
         color: "white",
-        price: 2500000
-    },
+        price: 2500000},
+
     {name: "fortuner",
         color: "Black",
         price: 2500000
-    },{name: "revo",
+    },
+    
+    {name: "revo",
     color: "white",
     price: 10000000
-},
+    },
 ]
+
+//filter method
+
+let filterCar = car3.filter(cars => cars.color === "white");
+filterCar = car3.filter(car => car.price > 1500000)
+// console.log(filterCar);
+
+let filterCar2 = car3.filter(carcbf => carcbf.color == "white")
+// console.log(filterCar2);
 
 type Info = {
     name : string,
@@ -176,13 +190,3 @@ let myInfo:Info = {
 
 // console.log(myInfo["name"])
 // console.log(myInfo.name);
-
-
-//filter method
-
-let filterCar = car3.filter(cars => cars.color ==="white");
-filterCar = car3.filter(car => car.price > 1500000)
-// console.log(filterCar);
-
-let filterCar2 = car3.filter(carcbf => carcbf.color == "white")
-console.log(filterCar2);

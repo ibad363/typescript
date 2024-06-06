@@ -81,11 +81,12 @@ export function sum (num1: number, num2: number){
 //Export keyword export function, type aliases, interface, simple variable
 
 
-// Destructure the array
+// // Destructure the array
 // let studentInfo2 : [string,number, boolean]
 // studentInfo2 = ["Ibad", 324330, true]
-// let [name, rollNo, onsite] = studentInfo2
-// console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );
+// let [name, rollNo, onsite] = studentInfo2  // store array values in single variable like in this e.g ibad in name, 324330 in rollno and true in onsite
+// // console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );
+// console.log(onsite);
 
 
 // unkown type
@@ -126,3 +127,22 @@ let val3: any = val // ok (means that type any is compatible with unkwown)
 // }else{
 //     console.log("this is string");
 // }
+
+// error type
+
+function Error1():never {
+    throw new Error("Error Occured")
+}
+function error2() :never{
+    throw new Error ("Error 2")
+}
+// Error1()
+// error2()
+
+// rest parameters
+
+function wallet(color:string, ...arg: string[]){
+    console.log(color, ...arg);
+}
+
+// wallet("Blue","NIC", "Bike Paper")

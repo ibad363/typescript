@@ -1,74 +1,79 @@
+"use strict";
 // in class 12, type aliases, type union, type literals
-var officeNo = "Office";
-var freindNo = 162627;
-var humanName = "Ibad";
-var animalL = 67876;
-var animals = ["Lion", "Cheetah", "Cat", "anyone"];
-var kuchBhi = ["133", "44"];
+let officeNo = "Office";
+let freindNo = 162627;
+const humanName = "Ibad";
+const animalL = 67876;
+let animals = ["Lion", "Cheetah", "Cat", "anyone"];
+const kuchBhi = ["133", "44"];
 // console.log(kuchBhi)
-// type literals
-var trafficLight;
+// Type literals: Jab hume pehle se value ka pata hota hai, to hum variable ki type ki jagah par values directly likh dete hain. Ab iske ilawa koi aur value us variable mein nahi a sakti.
+let trafficLight;
 trafficLight = "Red";
 trafficLight = "Green";
 trafficLight = "Yellow";
-// trafficLight = "kuch bhi"
+// trafficLight = "kuch bhi" //error
 // console.log(trafficLight)
-var user;
+let user;
 user = "log in";
 user = "log out";
-var car = {
+const car = {
     make: "Toyota",
     model: 2023,
     variant: "1800cc",
-    maxSpeed: function () {
+    maxSpeed: () => {
         return "Max speed is 200";
     }
 };
-var car2 = {
+const car2 = {
     make: "Toyota",
     model: 2023,
     variant: "1800cc",
-    start: function () {
+    start: () => {
         return "Starting speed is 50";
     },
-    maxSpeed: function () {
+    maxSpeed: () => {
         console.log("Max speed is 200");
     },
-    isAC: function () { return true; }
+    // isAC:()=>true
+    isAC: true
 };
-var myBill = {
+const myBill = {
     customerName: "Ibad",
     products: {
         productName: "biryani",
         price: 250,
-        isTasty: function () { return true; }
+        isTasty: () => true
     }
 };
-var acCheck = {
-    isAC: function () { return true; }
+const acCheck = {
+    isAC: () => true
 };
-var car3 = [
+let car3 = [
     { name: "Toyota",
         color: "Black",
-        price: 2500000
-    },
+        price: 2500000 },
     { name: "mehran",
         color: "white",
-        price: 1000000
-    },
+        price: 1000000 },
     { name: "civic",
         color: "white",
-        price: 2500000
-    },
+        price: 2500000 },
     { name: "fortuner",
         color: "Black",
         price: 2500000
-    }, { name: "revo",
+    },
+    { name: "revo",
         color: "white",
         price: 10000000
     },
 ];
-var myInfo = {
+//filter method
+let filterCar = car3.filter(cars => cars.color === "white");
+filterCar = car3.filter(car => car.price > 1500000);
+// console.log(filterCar);
+let filterCar2 = car3.filter(carcbf => carcbf.color == "white");
+let myInfo = {
     name: "Ibad",
     age: 20,
     isMarried: false,
@@ -77,9 +82,3 @@ var myInfo = {
 // two methods of objects property access
 // console.log(myInfo["name"])
 // console.log(myInfo.name);
-//filter method
-var filterCar = car3.filter(function (cars) { return cars.color === "white"; });
-filterCar = car3.filter(function (car) { return car.price > 1500000; });
-// console.log(filterCar);
-var filterCar2 = car3.filter(function (carcbf) { return carcbf.color == "white"; });
-console.log(filterCar2);

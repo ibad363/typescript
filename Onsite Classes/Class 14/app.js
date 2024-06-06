@@ -56,11 +56,12 @@ function sum(num1, num2) {
 }
 exports.sum = sum;
 //Export keyword export function, type aliases, interface, simple variable
-// Destructure the array
+// // Destructure the array
 // let studentInfo2 : [string,number, boolean]
 // studentInfo2 = ["Ibad", 324330, true]
-// let [name, rollNo, onsite] = studentInfo2
-// console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );
+// let [name, rollNo, onsite] = studentInfo2  // store array values in single variable like in this e.g ibad in name, 324330 in rollno and true in onsite
+// // console.log("Student name:",name,"," ,"Roll No:",rollNo,",","Onsite:", onsite );
+// console.log(onsite);
 // unkown type
 let val;
 let val2 = val; //ok (means that type unkwown is compatible with unkwown)
@@ -89,3 +90,17 @@ let val3 = val; // ok (means that type any is compatible with unkwown)
 // }else{
 //     console.log("this is string");
 // }
+// error type
+function Error1() {
+    throw new Error("Error Occured");
+}
+function error2() {
+    throw new Error("Error 2");
+}
+// Error1()
+// error2()
+// rest parameters
+function wallet(color, ...arg) {
+    console.log(color, ...arg);
+}
+// wallet("Blue","NIC", "Bike Paper")

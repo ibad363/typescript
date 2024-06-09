@@ -176,5 +176,91 @@ myType = myType4;
 // Ye aksar data exchange aur functionality sharing ke liye istemal hota hai, jaise ek application dosri se data mangna ya bhejna.
 // API, ek bridge ki tarah kaam karta hai jo ek software ke functions aur features ko dusre software se accessible banata hai.
 
+
+
+
 //Synchronous, Asynchronous, Call stack Callback queue , Higher order function, Callback function syntax
 
+// Synchronous programming mein code line-by-line execute hota hai. Har ek operation ke baad agli line execute hoti hai.
+function syncExample() {
+  console.log("Start");
+
+  // This line will wait for the console.log to finish
+  console.log("This is synchronous");
+
+  console.log("End");
+}
+
+// syncExample();
+
+//Asynchronous programming mein kuch operations background mein chalte hain aur code apni execution continue rakhta hai. Aam tor par, asynchronous code promises ya async/await ke zariye likha jata hai.
+function asyncExample() {
+  console.log("Start");
+
+  setTimeout(() => {
+    console.log("This is asynchronous");
+  }, 2000); // Wait for 2 seconds before executing this
+
+  console.log("End");
+}
+// asyncExample(); 
+
+// let a = 1
+// let b = 2
+
+// setTimeout(() => {
+//   console.log(a); // output: beacuse a value is change in line no. 216
+// },1000)
+
+// console.log(b);
+// a=3
+
+
+//Callback Function
+//Callback function ek function hai jo kisi doosre function ko as an argument pass kiya jata hai aur woh function usse apni execution ke baad call karta hai.
+
+// // Main Function - HOC (Higher Order Function)
+// function one(cb:()=> void){
+//   console.log("ONE");
+//   cb() // calling the cb function
+// }
+// // Callback
+// function Two(){
+//   console.log("Async Function");
+// } 
+
+// one(Two)
+
+// // more practice
+// function hello (callback:()=> void){
+//     callback()
+// }
+
+// let callBackFunction = () => {
+//   console.log("Callback Function");
+// }
+
+// hello(callBackFunction)
+
+// // little advanced
+// function hello (callback:any){
+//     callback("Ibad")
+// }
+
+// let callBackFunction = (name:string) => {
+//   console.log(`Hello ${name}`);
+// }
+
+// hello(callBackFunction)
+
+// little more advanced
+function hello(cb:(name :string) =>void, secondName:string){
+  cb(secondName)
+}
+
+let callBackFunction = (name:string) =>{
+  console.log(`Hello ${name}`);
+}
+
+// hello(callBackFunction, "Ibad")
+// hello(callBackFunction, "Rayyan")

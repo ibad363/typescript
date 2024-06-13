@@ -39,10 +39,17 @@ let addResult2 = addition(10,10)
 // console.log(addResult2)
 
 
-// conditional ternary if else (short method)practice
+// // conditional ternary if else (short method)practice
 
-let number = 6
+// let number = 6
 
-number>5 
-? 
-console.log(`The ${number} is greater Than given Number`) : console.log("Not Greater than");
+// number>5 
+// ? 
+// console.log(`The ${number} is greater Than given Number`) : console.log("Not Greater than");
+
+
+//promise
+let promise = new Promise(function (resolve, rejected){
+    resolve(10)
+})
+console.log(promise);

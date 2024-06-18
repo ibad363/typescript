@@ -48,8 +48,47 @@ let addResult2 = addition(10,10)
 // console.log(`The ${number} is greater Than given Number`) : console.log("Not Greater than");
 
 
-//promise
-let promise = new Promise(function (resolve, rejected){
-    resolve(10)
-})
-console.log(promise);
+// //promise
+// let promise = new Promise(function (resolve, rejected){
+//     resolve(10)
+// })
+// console.log(promise);
+
+
+// // title case practice
+
+// let sentence : string = "I am leaRnIng typesRipt"
+
+// let splitWords :string[] = sentence.split(" ")
+// let titleCase : string = ""
+// for(let i = 0; i < splitWords.length; i++){
+//     titleCase += splitWords[i].charAt(0).toUpperCase() + splitWords[i].slice(1,20).toLowerCase() + " "
+// }
+
+// console.log(titleCase);
+
+
+
+
+// //callback function practice
+
+// function myFunction (cb : ()=> void){
+//     console.log("text 1");
+//     cb()
+// }
+// function FunctionTwo (){
+//     console.log("text 2");
+// }
+
+// myFunction(FunctionTwo)
+
+
+
+// function myCallback (text : string){
+//     console.log("inside myCallBack Function",text);
+// }
+
+// function callingFunction (text2 :string, cb : (text :string) => void){
+//     cb(text2)
+// }
+// callingFunction("Ibad", myCallback)

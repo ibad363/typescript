@@ -219,17 +219,17 @@ function asyncExample() {
 //Callback Function
 //Callback function ek function hai jo kisi doosre function ko as an argument pass kiya jata hai aur woh function usse apni execution ke baad call karta hai.
 
-// // Main Function - HOC (Higher Order Function)
-// function one(cb:()=> void){
-//   console.log("ONE");
-//   cb() // calling the cb function
-// }
-// // Callback
-// function Two(){
-//   console.log("Async Function");
-// } 
+// Main Function - HOC (Higher Order Function)
+function one(cb:()=> void){
+  console.log("ONE");
+  cb() // calling the cb function
+}
+// Callback
+function Two(){
+  console.log("Async Function");
+} 
 
-// one(Two)
+one(Two)
 
 // // more practice
 // function hello (callback:()=> void){

@@ -96,23 +96,40 @@
 
 
 
-let promiseSeven = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-        let error = true
-        if (!error) {
-            resolve({ username: "Ibad", email: "ibad@gmail.com" })
-        } else {
-            reject("Error aya he")
-        }
-    }, 1000)
-})
 
-async function promiseSevenConsumed() {
-    try{
-        const response = await promiseSeven
-        console.log(response);
-    }catch(err){
-        console.log(err);
-    }
+//try catch
+
+// let promiseSeven = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         let error = true
+//         if (!error) {
+//             resolve({ username: "Ibad", email: "ibad@gmail.com" })
+//         } else {
+//             reject("Error aya he")
+//         }
+//     }, 1000)
+// })
+
+// async function promiseSevenConsumed() {
+//     try{
+//         const response = await promiseSeven
+//         console.log(response);
+//     }catch(err){
+//         console.log(err);
+//     }
+// }
+// promiseSevenConsumed()
+
+
+
+
+// fetch advance practice
+let url = "https://jsonplaceholder.typicode.com/posts/2"
+
+let fetchData = async () =>{
+    let fetching = await fetch(url)
+    let convertJson = await fetching.json()
+    console.log(convertJson);
 }
-promiseSevenConsumed()
+
+fetchData()

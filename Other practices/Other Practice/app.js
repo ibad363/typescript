@@ -12,7 +12,9 @@ let result2 = greet2();
 // console.log(result2); //output hello bro
 // arrow function
 // syntax of arrow function : let functionName = (parameters) => { code }
-let greet3 = (message = "Hello Dear") => { return message; };
+let greet3 = (message = "Hello Dear") => {
+    return message;
+};
 // console.log(greet3()); // Hello Dear
 // console.log(greet3("Hello Ibad")); // Hello Ibad
 // let greet4 = () : string => {
@@ -31,8 +33,8 @@ let addResult2 = addition(10, 10);
 // console.log(addResult2)
 // // conditional ternary if else (short method)practice
 // let number = 6
-// number>5 
-// ? 
+// number>5
+// ?
 // console.log(`The ${number} is greater Than given Number`) : console.log("Not Greater than");
 // //promise
 // let promise = new Promise(function (resolve, rejected){
@@ -63,3 +65,11 @@ let addResult2 = addition(10, 10);
 //     cb(text2)
 // }
 // callingFunction("Ibad", myCallback)
+function hello(cb, secondName) {
+    cb(secondName);
+}
+let callBackFunction = (name) => {
+    console.log(`Hello ${name}`);
+};
+hello(callBackFunction, "Ibad");
+hello(callBackFunction, "Rayyan");

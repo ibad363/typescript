@@ -11,45 +11,59 @@
 // let upperCase: string = personName.toUpperCase()
 // console.log(upperCase);
 // let lowerCase: string = personName.toLowerCase()
-// // console.log(lowerCase);
-// let titleCase :string = ""
-// let split:string[] = personName.split(" ")
-// for(let i=0; i<split.length; i++){
-//     titleCase += split[i].charAt(0).toUpperCase() + split[i].slice(1).toLowerCase() + " "
+// // // console.log(lowerCase);
+// let titleCase:string = ""
+// let split : string[] = personName.split(" ")
+// for(let i = 0; i<split.length; i++){
+//     titleCase += split[i].charAt(0).toUpperCase() + split [i].slice(1).toLowerCase() + " "
 // }
 // console.log(titleCase);
 //ex 3 complete
 // 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the
 // following, including the quotation marks:
 // Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+// let quote :string = "A person who never made a mistake never tried anything new."
+// console.log(`Albert Einstein once said, "${quote}"`);
+//ex 4 complete
+// 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+// let famousPerson :string = "Albert Einstein"
+// let message :string = "A person who never made a mistake never tried anything new."
+// console.log(`${famousPerson} once said, "${message}"`);
+//ex 5 complete
+// 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+// let whiteSpaceName:string = "\t\n\n ibad ur rehman \n \t"
+// console.log("Name with White Spaces", whiteSpaceName);
+// let strippedName :string = whiteSpaceName.trim()
+// console.log("Stripped Name", strippedName);
+//ex 6 complete
+// 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results. 
+// console.log("Addition:",4+4);
+// console.log("Subtraction:", 10-2);
+// console.log("Multiplication:", 4*2);
+// console.log("Division:", 16/2);
+//ex 7 complete
+// 8. You should create four lines that look like this:
+// _____________________________________________
+// console.log(5 + 3)
+// _____________________________________________
+// Your output should simply be four lines with the number 8 appearing once on each line.
+// console.log(4+4);
+// console.log(10-2);
+// console.log(4*2);
+// console.log(16/2);
+//ex 8 complete
+// 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+// let favNumber: number = 10
+// console.log(`My Favorite Number is ${favNumber}`);
+//ex 9 complete
+// 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
+// // Code Written By: Ibad Ur Rehman 
+// // Date: 8/7/24
+// // greet variable declared and assign value
+// let greet :string = "Hello Ibad"
+//ex 10 complete
+// 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 /*
-5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
-
-6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each
-character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
-
-7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
-
-8. You should create four lines that look like this:
-
-_____________________________________________
-
-console.log(5 + 3)
-
-_____________________________________________
-
-Your output should simply be four lines with the number 8 appearing once on each line.
-
-
-9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
-
-
-10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write
-because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence
-describing what the program does.
-
-11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
-
 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
 should be the same, but each message should be personalized with the person’s name.
 

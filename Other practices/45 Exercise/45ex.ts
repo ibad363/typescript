@@ -123,81 +123,202 @@
 
 // 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 
+// let freinds: string [] = ["ibad","ibad2", "ibad3", "ibad4", "ibad5"]
+// console.log(freinds[0]);
+// console.log(freinds[1]);
+// console.log(freinds[2]);
+// console.log(freinds[3]);
+// console.log(freinds[4]);
+
+//ex 11 complete
+
+
+
+
+
+// 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+
+
+// let freinds: string [] = ["ibad","ibad2", "ibad3", "ibad4", "ibad5"]
+
+// freinds.forEach(freind=>{
+//     console.log(`Hello ${freind}, How are you?`);
+// })
+
+//ex 12 complete
+
+
+
+
+
+
+
+// 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+
+// let favVehicle :string []= ["Bike 1","bike 2","bike 3","bike 4","bike 5"]
+// console.log(`I would like to own a ${favVehicle[0]}.`);
+
+// // remaining by loop
+// for(let i=1; i < favVehicle.length; i++){
+//     console.log(`I would like to own a ${favVehicle[i]}.`);
+// }
+
+//ex 13 complete
+
+
+
+
+
+// 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+
+// let guest : string[] = ["guest 1","guest 2","guest 3","guest 4"]
+// guest.forEach(guest=>{
+//     console.log(`\nDear ${guest}, you are invited to dinner. Please join us for a delightful evening!\n`);
+// })
+
+//ex 14 complete
+
+
+
+
+
+// 15. Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+
+// • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+// • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+// • Print a second set of invitation messages, one for each person who is still in your list.
+
+// let guests : string[] = ["guest 1","guest 2","guest 3","guest 4"]
+// guests.forEach(guest=>{
+//     console.log(`\nDear ${guest}, you are invited to dinner. Please join us for a delightful evening!\n`);
+// })
+// console.log(`\nMr ${guests[2]} is Not Coming to the Dinner\n`);
+
+// let newGuest = "guest 5"
+// guests[2] = newGuest
+
+// guests.forEach(guest=>{
+//     console.log(`\nThis is updated Invitation, Dear ${guest}, you are invited to dinner.\n`);
+// })
+
+
+//ex 15 complete
+
+
+
+
+
+// 16. More Guests: You just found a bigger dinner table, so now more space is
+// available. Think of three more guests to invite to dinner.
+
+// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+// • Add one new guest to the beginning of your array.
+// • Add one new guest to the middle of your array.
+// • Use append() to add one new guest to the end of your list.
+// • Print a new set of invitation messages, one for each person in your list.
+
+
+// let guests : string[] = ["guest 1","guest 2","guest 3","guest 4"]
+// guests.forEach(guest=>{
+//     console.log(`Dear ${guest}, you are invited to dinner. Please join us for a delightful evening!\n`);
+// })
+// console.log(`Mr ${guests[2]} is Not Coming to the Dinner\n`);
+
+// let newGuest = "guest 5"
+// guests[2] = newGuest
+
+// guests.forEach(guest=>{
+//     console.log(`This is updated Invitation, Dear ${guest}, you are invited to dinner.\n`);
+// })
+
+// console.log(`I found a bigger dinner table.\n`);
+
+// guests.unshift("guest 6") //beginning
+// guests.splice(3,0,"guest 7") // (middle) after index no. 2, in 4th number index
+// guests.push("guest 8") //end
+
+// guests.forEach(guest=>{
+//     console.log(`This is 3rd Invitation, Dear ${guest}, you are invited to dinner`);
+// })
+
+//ex 16 complete
+
+
+
+
+// 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+
+// • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+// • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+// • Print a message to each of the two people still on your list, letting them know they’re still invited.
+// • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+
+// let guests : string[] = ["guest 1","guest 2","guest 3","guest 4"]
+// guests.forEach(guest=>{
+//     console.log(`Dear ${guest}, you are invited to dinner. Please join us for a delightful evening!\n`);
+// })
+// console.log(`Mr ${guests[2]} is Not Coming to the Dinner\n`);
+
+// let newGuest = "guest 5"
+// guests[2] = newGuest
+
+// guests.forEach(guest=>{
+//     console.log(`This is updated Invitation, Dear ${guest}, you are invited to dinner.\n`);
+// })
+
+// console.log(`I found a bigger dinner table.\n`);
+
+// guests.unshift("guest 6") //beginning
+// guests.splice(3,0,"guest 7") // (middle) after index no. 2, in 4th number index
+// guests.push("guest 8") //end
+
+// guests.forEach(guest=>{
+//     console.log(`This is 3rd Invitation, Dear ${guest}, you are invited to dinner`);
+// })
+
+// console.log(`\nsorry, i can invite only two people for dinner.\n`);
+
+// for(let i= 0; i<5;i++){
+//     let remove = guests.pop()
+//     console.log(`sorry ${remove} you cant invite to dinner.\n`);
+// }
+
+// console.log(`Dear ${guests[0]}, you are still invited to dinner`);
+// console.log(`Dear ${guests[1]}, you are still invited to dinner`);
+
+// guests.pop()
+// guests.pop()
+
+// console.log("Clear the Guest List: ",guests);
+
+
+// ex 17 complete
+
+
+
+
+
+// 18. Seeing the World: Think of at least five places in the world you’d like to visit.
+
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+// • Print your array in its original order.
+// • Print your array in alphabetical order without modifying the actual list.
+// • Show that your array is still in its original order by printing it.
+// • Print your array in reverse alphabetical order without changing the order of the original list.
+// • Show that your array is still in its original order by printing it again.
+// • Reverse the order of your list. Print the array to show that its order has changed.
+// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+
+let dreamPlaces: string[] = ["Makkah","Madina","Najaf","Baghdad","Ajmer","Lahore","Bareilly"]
+
 
 
 
 
 
 /*
-12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
-should be the same, but each message should be personalized with the person’s name.
-
-13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
-to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
-
-14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
-invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-
-15. Changing Guest List: You just heard that one of your guests can’t make the
-dinner, so you need to send out a new set of invitations. You’ll have to think of
-someone else to invite.
-
-• Start with your program from Exercise 14. Add a print statement at the
-end of your program stating the name of the guest who can’t make it.
-
-• Modify your list, replacing the name of the guest who can’t make it with
-the name of the new person you are inviting.
-
-• Print a second set of invitation messages, one for each person who is still
-in your list.
-
-16. More Guests: You just found a bigger dinner table, so now more space is
-available. Think of three more guests to invite to dinner.
-
-• Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
-bigger dinner table.
-
-• Add one new guest to the beginning of your array.
-
-• Add one new guest to the middle of your array.
-• Use append() to add one new guest to the end of your list.
-• Print a new set of invitation messages, one for each person in your list.
-
-17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
-
-• Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
-
-• Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print
-a message to that person letting them know you’re sorry you can’t invite them to dinner.
-
-• Print a message to each of the two people still on your list, letting them know they’re still invited.
-
-• Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
-of your program.
-
-18. Seeing the World: Think of at least five places in the world you’d like to visit.
-
-• Store the locations in a array. Make sure the array is not in alphabetical order.
-
-• Print your array in its original order.
-
-• Print your array in alphabetical order without modifying the actual list.
-
-• Show that your array is still in its original order by printing it.
-
-• Print your array in reverse alphabetical order without changing the order of the original list.
-
-• Show that your array is still in its original order by printing it again.
-
-• Reverse the order of your list. Print the array to show that its
-order has changed.
-
-• Reverse the order of your list again. Print the list to show it’s back to its original order.
-
-• Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
-
-• Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-
 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number
 of people you are inviting to dinner.
 

@@ -174,100 +174,200 @@
 // • Reverse the order of your list again. Print the list to show it’s back to its original order.
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-let dreamPlaces = ["Makkah", "Madina", "Najaf", "Baghdad", "Ajmer", "Lahore", "Bareilly"];
+// let dreamPlaces: string[] = ["Makkah","Madina","Najaf","Baghdad","Ajmer","Lahore","Bareilly"]
+// console.log("Original Array", dreamPlaces); // Print your array in its original order.
+// let alphabeticalOrder: string[] = [...dreamPlaces]
+// alphabeticalOrder.sort()
+// console.log("Alphabetically Sorted Array", alphabeticalOrder); // Print your array in alphabetical order without modifying the actual list.
+// console.log("Original Array Again", dreamPlaces); // Show that your array is still in its original order by printing it.
+// alphabeticalOrder.reverse()
+// console.log("Reverse Alphabetically Sorted Array", alphabeticalOrder); // Print your array in reverse alphabetical order without changing the order of the original list.
+// console.log("Original Array Again", dreamPlaces); // Show that your array is still in its original order by printing it again.
+// dreamPlaces.reverse()
+// console.log("Reverse Original Array",dreamPlaces); // Reverse the order of your list.
+// dreamPlaces.reverse()
+// console.log("Reverse Original Array Again",dreamPlaces); // Reverse the order of your list again. Print the list to show it’s back to its original order.
+// dreamPlaces.sort()
+// console.log("Alphabetically Sorted Original Array", dreamPlaces); // Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+// dreamPlaces.reverse()
+// console.log("Reverse Alphabetically Sorted Original Array", dreamPlaces); // Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+// ex 18 complete
+// 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+// ex 16
+// let guests : string[] = ["guest 1","guest 2","guest 3","guest 4"]
+// guests.forEach(guest=>{
+//     // console.log(`Dear ${guest}, you are invited to dinner. Please join us for a delightful evening!\n`);
+// })
+// // console.log(`Mr ${guests[2]} is Not Coming to the Dinner\n`);
+// let newGuest = "guest 5"
+// guests[2] = newGuest
+// guests.forEach(guest=>{
+//     // console.log(`This is updated Invitation, Dear ${guest}, you are invited to dinner.\n`);
+// })
+// // console.log(`I found a bigger dinner table.\n`);
+// guests.unshift("guest 6") //beginning
+// guests.splice(3,0,"guest 7") // (middle) after index no. 2, in 4th number index
+// guests.push("guest 8") //end
+// guests.forEach(guest=>{
+//     // console.log(`This is 3rd Invitation, Dear ${guest}, you are invited to dinner`);
+// })
+// ex 19 start
+// console.log("Total Number of Guest Invited to Dinner is" , guests.length);
+// ex 19 complete
+// 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+// let cities: string[] = ["Karachi", "Lahore","Islamabad","Hyderabad","Multan","Quetta","Peshawar","Faisalabad","Rawalpindi","Sialkot","Bahawalpur"]
+// console.log("List of Some Famous Cities in Pakistan", cities);
+// ex 20 complete
+// 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// let personInfo :{
+//     name: string
+//     age: number
+//     isMarried: boolean
+// } = {
+//     name: "Ibad",
+//     age : 20,
+//     isMarried: false,
+// }
+// console.log(personInfo);
+// ex 21 complete
+// 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+// let cities: string[] = ["Karachi", "Lahore","Islamabad","Hyderabad","Multan","Quetta","Peshawar","Faisalabad","Rawalpindi","Sialkot","Bahawalpur"]
+// console.log(cities[11]); // it shows undefined
+// console.log(cities[10]); // Bahawalpur, Because array index start by 0
+// ex 22 complete
+// 23. Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+// let car = 'subaru';
+// console.log("Is car == 'subaru'? I predict True.")
+// console.log(car == 'subaru')
+// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+// let car :string = "Revo"
+// console.log("is car == 'Revo'? i predict True:", car == "Revo");
+// console.log("is car === 'Revo'? i predict True:", car === "Revo");
+// console.log("is car != 'revo'? i predict True:", car != "revo");
+// console.log("is car == car.charAt(0).toUpperCase()+ car.slice(1).toLowerCase()? i predict True:", car == car.charAt(0).toUpperCase()+ car.slice(1).toLowerCase());
+// console.log("is car.toUpperCase() == 'REVO'? i predict True:", car.toUpperCase() == 'REVO');
+// console.log("is car != 'Revo'? i predict False:", car != "Revo");
+// console.log("is car == 'revo'? i predict False:", car == "revo");
+// console.log("is car == 'ReVo'? i predict False:", car == "ReVo");
+// console.log("is car == 'Toyota'? i predict False:", car == "Toyota");
+// console.log("is car == 'toyota'? i predict False:", car == "toyota");
+// ex 23 complete
+// 24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+// • Tests using the lower case function
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+// • Tests using "and" and "or" operators
+// • Test whether an item is in a array
+// • Test whether an item is not in a array
+// let car : string =  "Revo"
+// console.log("is car == 'Revo'? i predict True:", car == "Revo");
+// console.log("is car == 'revo'? i predict False:", car == "revo");
+// console.log("is car.toLowerCase() == 'Revo'? i predict True:", car.toLowerCase() == "revo");
+// console.log("is car.toLowerCase() == 'Revo'? i predict False:", car.toLowerCase() == "Revo");
+// let number :number = 10
+// console.log("is number == 10? i predict True:", number == 10);
+// console.log("is number == 100? i predict False:", number == 100);
+// console.log("is number > 9? i predict True:", number > 9);
+// console.log("is number > 11? i predict False:", number > 11);
+// console.log("is number >= 9? i predict True:", number >= 9);
+// console.log("is number >= 11? i predict False:", number >= 11);
+// console.log("is number >= 9 && number > 9 ? i predict True:", number >= 9 && number > 9);
+// console.log("is number >= 9 && number > 10 ? i predict False:", number >= 9 && number > 10);
+// console.log("is number >= 9 || number > 10? i predict True:", number >= 9 || number > 10);
+// console.log("is number == 9 || number > 10 ? i predict False:", number == 9 || number > 10);
+// let cities : string[] = ["Karachi", "Lahore","Islamabad","Peshawar","Quetta"]
+// console.log("is cities.includes('Karachi')? i predict True:",cities.includes("Karachi"));
+// console.log("is cities.includes('karachi')? i predict False:",cities.includes("karachi"));
+// ex 23 complete
+// 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+// • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+// • Write one version of this program that passes the if test and another thatfails. (The version that fails will have no output.)
+// let alienColor :string = "green"
+// if (alienColor == "green") {
+//     console.log("the player just earned 5 points.");
+// }else{
+//     console.log("Condition Failed");
+// }
+// if (alienColor == "red") {
+//     console.log("the player just earned 5 points.");
+// }else{
+//     console.log("Condition Failed");
+// }
+// ex 25 complete
+// 26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+// • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+// • Write one version of this program that runs the if block and another that runs the else block.
+// let alienColor :string = "green"
+// if(alienColor == "green"){
+//     console.log("the player just earned 5 points for shooting the alien.");
+// }else{
+//     console.log("the player just earned 10 points.");
+// }
+// alienColor = "red"
+// if(alienColor == "green"){
+//     console.log("the player just earned 5 points for shooting the alien.");
+// }else{
+//     console.log("the player just earned 10 points.");
+// }
+// ex 26 complete
+// 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// • If the alien is green, print a message that the player earned 5 points.
+// • If the alien is yellow, print a message that the player earned 10 points.
+// • If the alien is red, print a message that the player earned 15 points.
+// • Write three versions of this program, making sure each message is printed for the appropriate color alien.
+// let alienColor :string = "green"
+// if(alienColor == "green"){
+//     console.log("the player just earned 5 points.");
+// }else if(alienColor == "yellow"){
+//     console.log("the player just earned 10 points.");
+// } else if (alienColor == "red"){
+//     console.log("the player just earned 15 points.");
+// }
+// alienColor = "yellow"
+// if(alienColor == "green"){
+//     console.log("the player just earned 5 points.");
+// }else if(alienColor == "yellow"){
+//     console.log("the player just earned 10 points.");
+// }else if (alienColor == "red"){
+//     console.log("the player just earned 15 points.");
+// }
+// alienColor = "red"
+// if(alienColor == "green"){
+//     console.log("the player just earned 5 points.");
+// }else if(alienColor == "yellow"){
+//     console.log("the player just earned 10 points.");
+// }else if (alienColor == "red"){
+//     console.log("the player just earned 15 points.");
+// }
+// ex 27 complete 
+// 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+// • If the person is less than 2 years old, print a message that the person is a baby.
+// • If the person is at least 2 years old but less than 4, print a message that the person is a to older.
+// • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
+// • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
+// • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
+// • If the person is age 65 or older, print a message that the person is an elder.
+// let age :number = 65
+// if(age < 2 ){
+//     console.log("the person is a baby.");
+// }else if(age == 2 || age < 4){
+//     console.log("the person is a to older.");
+// }else if(age == 4 || age < 13){
+//     console.log("the person is a kid.");
+// }else if(age == 13 || age < 20){
+//     console.log("the person is a teenager.");
+// }else if(age == 20 || age < 65){
+//     console.log("the person is a adult.");
+// }else if(age >= 65){
+//     console.log("the person is a elder.");
+// }
+// ex 28 complete
+// 29. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
 /*
-19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number
-of people you are inviting to dinner.
-
-20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything
-else you’d like. Write a program that creates a list containing these items.
-
-21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
-
-22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs
-to produce an index error. Make sure you correct the error before closing the program.
-
-
-23. Conditional Tests: Write a series of conditional tests. Print a statement
-describing each test and your prediction for the results of each test. Your code
-should look something like this:
-
-let car = 'subaru';
-
-console.log("Is car == 'subaru'? I predict True.")
-
-console.log(car == 'subaru')
-
-• Look closely at your results, and make sure you understand why each line evaluates to True or False.
-
-• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
-
-24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
-
-• Tests for equality and inequality with strings
-
-• Tests using the lower case function
-
-• Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
-
-• Tests using "and" and "or" operators
-
-• Test whether an item is in a array
-
-• Test whether an item is not in a array
-
-
-25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a
-variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-
-• Write an if statement to test whether the alien’s color is green. If it is, print
-a message that the player just earned 5 points.
-
-• Write one version of this program that passes the if test and another that
-fails. (The version that fails will have no output.)
-
-26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and
-write an if-else chain.
-
-• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
-
-• If the alien’s color isn’t green, print a statement that the player just earned 10 points.
-
-• Write one version of this program that runs the if block and another that runs the else block.
-
-
-27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
-
-• If the alien is green, print a message that the player earned 5 points.
-
-• If the alien is yellow, print a message that the player earned 10 points.
-
-• If the alien is red, print a message that the player earned 15 points.
-
-• Write three versions of this program, making sure each message is printed for the appropriate color alien.
-
-28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
-
-• If the person is less than 2 years old, print a message that the person is a baby.
-
-• If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
-
-• If the person is at least 4 years old but less than 13, print a message that the person is a kid.
-
-• If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
-
-• If the person is at least 20 years old but less than 65, print a message that the person is an adult.
-
-• If the person is age 65 or older, print a message that the person is an elder.
-
-29. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
-
-• Make a array of your three favorite fruits and call it favorite_fruits.
-
-• Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement,
-such as You really like bananas!
-
-
 30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user
 after they log in to a website. Loop through the array, and print a greeting to each user:
 

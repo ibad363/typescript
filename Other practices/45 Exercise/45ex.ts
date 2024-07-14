@@ -622,8 +622,56 @@
 // • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
 
 
+// let favFruits :string[]= ["Mango","Banana","Cherry","Pineapple","Orange"]
+// if(favFruits.includes("Banana")){
+//     console.log("i really like Banana");
+// }
+// if(favFruits.includes("Mango")){
+//     console.log("i really like Mango");
+// }
+// if(favFruits.includes("Cherry")){
+//     console.log("i really like Cherry");
+// }
+// if(favFruits.includes("Pineapple")){
+//     console.log("i really like Pineapple");
+// }
+// if(favFruits.includes("orange")){
+//     console.log("i really like Orange"); // not working, case Mistake
+// }
+
+// ex 29 complete
 
 
+
+
+
+// 30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user
+// after they log in to a website. Loop through the array, and print a greeting to each user:
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+
+
+// let username: string[] = ["user1","user2","user3","user4","user5","admin"]
+
+// username.forEach(username=>{
+//     if(username == "admin"){
+//         console.log("Hello admin, would you like to see a status report?");
+//     }else{
+//         console.log(`Hello ${username}, thank you for logging in again.`);
+//     }
+// })
+
+
+// ex 30 complete
+
+
+
+
+
+// 31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+
+// • If the list is empty, print the message We need to find some users!
+// • Remove all of the usernames from your array, and make sure the correct message is printed.
 
 
 
@@ -634,19 +682,6 @@
 
 
 /*
-30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user
-after they log in to a website. Loop through the array, and print a greeting to each user:
-
-• If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
-
-• Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
-
-31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
-
-• If the list is empty, print the message We need to find some users!
-
-• Remove all of the usernames from your array, and make sure the correct message is printed.
-
 32. Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
 
 • Make a list of five or more usernames called current_users.

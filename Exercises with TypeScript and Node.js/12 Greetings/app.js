@@ -1,6 +1,6 @@
 "use strict";
 // Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
-let names = ['Farhan Bhai', 'Rayyan Bhai', 'Jahanzaib', 'Abdul Rafay Bhai', 'Ibad'];
+let names = ['Bhai 1', 'Bhai 2', 'Bhai 3', 'Bhai 4', 'Bhai 5',];
 // one by one method
 console.log(`Welcome to Ibad Coding! ${names[0]}`);
 console.log(`Welcome to Ibad Coding! ${names[1]}`);

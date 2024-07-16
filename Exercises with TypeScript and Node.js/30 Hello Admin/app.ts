@@ -2,7 +2,7 @@
 // • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
 // • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 
-let userNames:string[] = ["ali","anus","ammar","aashir","admin"]
+let userNames:string[] = ["user 1","user 2","user 3","user 4","admin"]
 
 userNames.forEach(userName=>{
   if(userName === "admin"){

@@ -423,7 +423,7 @@
 // let currentUsers: string[] = ["user1","uSer2","user3","user4","user5"]
 // let newUsers: string[] = ["user6","User2","user8","user9","user5"]
 // newUsers.forEach(newuser=>{
-//     if(currentUsers.some(current=>current.toLowerCase() === newuser.toLowerCase())){
+//     if(currentUsers.some(currentUser=>currentUser.toLowerCase() == newuser.toLowerCase())){
 //         console.log(`the ${newuser} will need to enter a new username.`);
 //     }else{
 //         console.log(`username is available.`);
@@ -571,11 +571,16 @@
 // ex 44 complete
 // 45. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. 
 // Print the Object that’s returned to make sure all the information was stored correctly.
-function makeCar(manufacturer, modelName, ...extraOption) {
-    let car = Object.assign({ manufacturer: manufacturer, modelName: modelName }, Object.assign({}, ...extraOption));
-    return car;
-}
-console.log(makeCar("Honda", "Civic", { color: "Black", year: 2024 }));
-console.log(makeCar("Honda", "Civic", { color: "Black" }, { year: 2024 }));
-//"Honda","Civic", {color: "Black"}, {features: ["navigation", "window screen"]}))
-// "Ford","Fiesta", {color: "Blue"}, {Year: 2020}))
+// function storeCarInfo(manufacturer:string,modelName:string, ...extraOption:{[name:string]:any}[]):object{
+//     let car = {
+//         manufacturer: manufacturer,
+//         modelName: modelName,
+//         // manufacturer, //both methods working
+//         // modelName, //both methods working
+//         ...Object.assign({},...extraOption),
+//     }
+//     return car
+// }
+// console.log(storeCarInfo("Honda","Civic",{color: "Black",year:2024}));
+// console.log(storeCarInfo("Ford","Fiesta",{color: "Blue"},{year:2024},{features: ["navigation", "window screen"]}));
+// ex 45 complete

@@ -707,7 +707,7 @@
 
 // let newUsers: string[] = ["user6","User2","user8","user9","user5"]
 // newUsers.forEach(newuser=>{
-//     if(currentUsers.some(current=>current.toLowerCase() === newuser.toLowerCase())){
+//     if(currentUsers.some(currentUser=>currentUser.toLowerCase() == newuser.toLowerCase())){
 //         console.log(`the ${newuser} will need to enter a new username.`);
 //     }else{
 //         console.log(`username is available.`);
@@ -965,7 +965,6 @@
 
 
 
-
 // 44. Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 
 // function makeSandwich(...item:string[]){
@@ -981,23 +980,21 @@
 
 
 
-
-
 // 45. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. 
 // Print the Object that’s returned to make sure all the information was stored correctly.
 
-function makeCar(manufacturer:string,modelName:string, ...extraOption: {[name:string]:any}[]) : object {
-    let car = {
-        manufacturer: manufacturer,
-        modelName: modelName,
-        ...Object.assign({},...extraOption)
-    }
-    return car
-}
+// function storeCarInfo(manufacturer:string,modelName:string, ...extraOption:{[name:string]:any}[]):object{
+//     let car = {
+//         manufacturer: manufacturer,
+//         modelName: modelName,
+//         // manufacturer, //both methods working
+//         // modelName, //both methods working
+//         ...Object.assign({},...extraOption),
+//     }
+//     return car
+// }
 
-console.log(makeCar("Honda","Civic",{color: "Black",year:2024}));
-console.log(makeCar("Honda","Civic",{color: "Black"},{year:2024}));
+// console.log(storeCarInfo("Honda","Civic",{color: "Black",year:2024}));
+// console.log(storeCarInfo("Ford","Fiesta",{color: "Blue"},{year:2024},{features: ["navigation", "window screen"]}));
 
-
-//"Honda","Civic", {color: "Black"}, {features: ["navigation", "window screen"]}))
-// "Ford","Fiesta", {color: "Blue"}, {Year: 2020}))
+// ex 45 complete

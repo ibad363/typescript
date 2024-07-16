@@ -3,7 +3,7 @@
 //• Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 //• Print a second set of invitation messages, one for each person who is still in your list.
 
-let guest : string[] = ['Ibad', 'Anus', 'Arsalan', 'Jahanzaib']
+let guest : string[] = ['Guest 1', 'Guest 2', 'Guest 3', 'Guest 4']
 
 //1st Invitation
 //ex 14
@@ -11,9 +11,9 @@ for(let i =0; i<guest.length;i++){
   console.log(`Dear ${guest[i]}, \nyou are invited to Dinner. Please join us for a delightful evening! \nThank You\n`);
 }
 
-let absentGuest :string = 'Ibad';
-let newGuest : string = 'Ashar';
-guest[guest.indexOf(absentGuest)] = newGuest
+let absentGuest :string = 'Guest 4';
+let newGuest : string = 'Guest 5';
+guest[3] = newGuest
 
 console.log(`Mr ${absentGuest} is Not Coming to the Dinner\n`)
 

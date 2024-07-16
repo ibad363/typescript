@@ -2,11 +2,6 @@
 
 let magicians :string[] = ["Magician 1", "Magician 2", "Magician 3", "Magician 4"]
 
-//function for copy array
-function copyArray(Array:string[]){
-    return [...Array]
-}
-
 // function to show names of magicians
 function show_magicians(magician:string[]){
     magician.forEach(magician=>{
@@ -14,18 +9,21 @@ function show_magicians(magician:string[]){
     })
 }
 
-// add the great to all magicians
+// function for add the great to all magicians
 function make_great(magicianArray:string[]){
     for (let i=0 ; i < magicianArray.length; i++) {
         magicianArray[i] = "The Great " + magicianArray[i];
     }
+    return magicianArray
 }
 console.log("\nThis is Original Array");
-show_magicians(magicians);
+console.log(magicians);
 
-const copyMagicianArray:string[] = copyArray(magicians); // copy original array
 
-make_great(copyMagicianArray) //add the great to copy array
+//copy array
+let copyArray : string [] = [...magicians]
+
+let great = make_great(copyArray) //add the great to copy array
 
 console.log("\nThis is modified Array");
-show_magicians(copyMagicianArray) // show copied & modified array
+console.log(great); // show copied & modified array

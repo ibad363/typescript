@@ -8,8 +8,8 @@
 // // secondPromise.then((res) => {return res}).then((res) => console.log(res))
 // const returnMoney = new Promise((resolve, reject)=>{
 //     setTimeout(() => {
-//         // resolve("Money Returned")
-//         reject("Failure")
+//         resolve("Money Returned")
+//         // reject("Failure")
 //     }, 1500);
 // })
 // returnMoney.then((value)=>{
@@ -18,6 +18,8 @@
 // }).catch((value)=>{
 //     console.log(value);
 //     console.log("Sorry, I am Unable to return Money");
+// }).finally(()=>{
+//     console.log("Ainda bhi Paisa Mile ga");
 // })
 function washing() {
     console.log("Washing Started..");
@@ -43,4 +45,13 @@ function drying() {
         }, 2000);
     });
 }
+washing().then((res) => {
+    console.log(res);
+    return soaking();
+}).then((response) => {
+    console.log(response);
+    return drying();
+}).then((response) => {
+    console.log(response);
+});
 export {};

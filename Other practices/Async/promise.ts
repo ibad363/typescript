@@ -12,8 +12,8 @@
 
 // const returnMoney = new Promise((resolve, reject)=>{
 //     setTimeout(() => {
-//         // resolve("Money Returned")
-//         reject("Failure")
+//         resolve("Money Returned")
+//         // reject("Failure")
 //     }, 1500);
 // })
 
@@ -23,11 +23,13 @@
 // }).catch((value)=>{
 //     console.log(value);
 //     console.log("Sorry, I am Unable to return Money");
+// }).finally(()=>{
+//     console.log("Ainda bhi Paisa Mile ga");
 // })
 
-function washing(){
+function washing() {
     console.log("Washing Started..");
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("Washing Done")
         }, 2500);
@@ -36,7 +38,7 @@ function washing(){
 
 function soaking() {
     console.log("Soaking Started");
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("Soaking Done");
         }, 2000);
@@ -45,9 +47,19 @@ function soaking() {
 
 function drying() {
     console.log("Drying Started");
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("Drying Done");
         }, 2000);
     })
 }
+
+washing().then((res)=>{
+    console.log(res);
+    return soaking()
+}).then((response)=>{
+    console.log(response);
+    return drying()
+}).then((response)=>{
+    console.log(response);
+})

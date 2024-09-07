@@ -1,8 +1,9 @@
 {
-  "name": "project02_atm",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ibad-atm",
+  "version": "1.0.1",
+  "description": "A simple ATM Machine Project with Typescript, Node.js and Inquirer, pin is: 1234",
   "main": "index.js",
+  "bin": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
